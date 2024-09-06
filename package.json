@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "scripts": {
+    "serve:dev": "vite --port 3000",
+    "build": "vite build",
+    "preview": "vite build && vite preview"
+  },
+  "dependencies": {
+    "@preact/preset-vite": "^2.9.0",
+    "@tanstack/react-query": "^5.54.1",
+    "preact": "^10.23.0",
+    "preact-render-to-string": "^6.5.10",
+    "react": "npm:@preact/compat",
+    "react-dom": "npm:@preact/compat",
+    "vike": "^0.4.194",
+    "vike-react-query": "^0.1.1",
+    "vite": "^5.4.3"
+  }
+}
