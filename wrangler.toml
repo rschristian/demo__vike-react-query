@@ -1,0 +1,3 @@
+name = "demo--vike-react-query"
+pages_build_output_dir = "./dist/cloudflare"
+compatibility_flags = [ "nodejs_compat" ]
