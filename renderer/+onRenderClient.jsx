@@ -11,13 +11,13 @@ const queryClient = new QueryClient();
 async function onRenderClient(pageContext) {
   const { Page, pageProps } = pageContext;
   const page = (
-    <Suspense fallback={'...loading'}>
-      <QueryClientProvider client={queryClient}>
-        <PageShell pageContext={pageContext}>
+    <QueryClientProvider client={queryClient}>
+      <PageShell pageContext={pageContext}>
+        <Suspense fallback={'...loading'}>
           <Page {...pageProps} />
-        </PageShell>
-      </QueryClientProvider>
-    </Suspense>
+        </Suspense>
+      </PageShell>
+    </QueryClientProvider>
   );
   const container = document.querySelector('body');
 
